@@ -269,7 +269,9 @@ body {
 /* подвал */
 .footer {
   background-color: var(--footer-hero-color-bcg);
+  padding: 60px;
 }
+
 .footer-item .text {
   color: var(--title-color);
 
