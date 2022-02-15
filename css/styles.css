@@ -214,6 +214,9 @@ body {
 .example {
   background-color: var(--general-color-bcg);
 }
+.example.section {
+  padding-top: 0px;
+}
 
 .example-list {
   display: flex;
@@ -221,7 +224,6 @@ body {
 
 .example-item {
   margin-top: 50px;
-  margin-bottom: 94px;
 }
 .example-item:nth-child(n + 2) {
   margin-left: 30px;
