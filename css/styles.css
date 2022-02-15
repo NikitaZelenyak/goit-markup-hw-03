@@ -61,6 +61,10 @@ body {
 
 /* Header */
 
+.header {
+  border: 1px solid #ececec;
+}
+
 .container.flex,
 .nav-list,
 .auth-nav,
