@@ -302,6 +302,11 @@ li {
 }
 
 /* Portfolio */
+
+.current {
+  color: var(--accent-color);
+}
+
 .portfolio {
   background-color: var(--general-color-bcg);
 }
