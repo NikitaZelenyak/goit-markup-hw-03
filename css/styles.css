@@ -52,7 +52,6 @@ ul {
   padding-bottom: 94px;
 }
 body {
-  background-color: var(--general-color-page);
   color: var(--general-text-color);
 
   font-family: var(--general-font);
@@ -141,6 +140,8 @@ body {
 .hero {
   background-color: var(--footer-hero-color-bcg);
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-title {
   color: var(--title-color);
@@ -242,14 +243,6 @@ body {
 .team {
   background-color: var(--secondaru-color-bcg);
 }
-.team-title {
-  color: var(--secondary-title-color);
-
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
-  text-align: center;
-}
 
 .team-list {
   display: flex;
@@ -257,6 +250,19 @@ body {
 }
 .team-item:nth-child(n + 2) {
   margin-left: 30px;
+}
+
+.team-description {
+  padding: 30px 60px;
+}
+
+.team-title {
+  color: var(--secondary-title-color);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
 }
 
 .team-title-name {
@@ -271,11 +277,12 @@ body {
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
+  margin-top: 10px;
 }
 /* подвал */
 .footer {
   background-color: var(--footer-hero-color-bcg);
-  padding: 60px;
+  padding: 60px 0px;
 }
 
 .footer-item .text {
@@ -322,6 +329,7 @@ li {
 .portfolio-list-button {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 .portfolio-item-button:nth-child(n + 2) {
   margin-left: 8px;
@@ -334,7 +342,7 @@ li {
 }
 .portfolio-button {
   cursor: pointer;
-  color: var(--secondary-text-color);
+  color: var(--secondary-title-color);
   background-color: var(--white-color);
 
   font-weight: 500;
@@ -346,6 +354,7 @@ li {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+  border: transparent;
 }
 
 .portfolio-list {
@@ -358,7 +367,7 @@ li {
 .portfolio-item {
   margin-left: 30px;
   margin-top: 30px;
-  flex-basis: calc(100% / 3 - 42px);
+  flex-basis: calc(100% / 3 - 30px);
   border: 1px solid #eeeeee;
   background: #ffffff;
 }
@@ -370,7 +379,6 @@ li {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  margin-top: 20px;
 }
 .portfolio-text {
   font-size: 16px;
@@ -379,12 +387,9 @@ li {
 }
 
 .card-text-portfolio {
-  margin: 20px 24px;
+  padding: 20px 24px;
 }
 
-.flex-portfolio {
-  margin-top: 50px;
-}
 .portfolio-item > img {
   max-width: 100%;
   display: block;
