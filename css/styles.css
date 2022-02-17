@@ -72,9 +72,6 @@ body {
   align-items: center;
 }
 
-.nav-item {
-  padding: 32px 0px;
-}
 .nav-item:nth-child(1) {
   margin-left: 93px;
 }
@@ -107,6 +104,9 @@ body {
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
+
+  padding: 32px 0px;
+  display: inline-block;
 }
 
 .nav-link {
@@ -117,6 +117,9 @@ body {
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
+
+  padding: 32px 0px;
+  display: inline-block;
 }
 
 .logo {
@@ -183,9 +186,6 @@ body {
 }
 
 /* Особенности компании */
-.feature {
-  background-color: var(--general-color-bcg);
-}
 
 .feature-list {
   display: flex;
@@ -212,19 +212,17 @@ body {
 }
 
 /* Фото занятий компании */
-.example {
-  background-color: var(--general-color-bcg);
-}
+
 .example.section {
   padding-top: 0px;
 }
 
 .example-list {
   display: flex;
+  margin-top: 50px;
 }
 
 .example-item {
-  margin-top: 50px;
 }
 .example-item:nth-child(n + 2) {
   margin-left: 30px;
@@ -253,7 +251,7 @@ body {
 }
 
 .team-description {
-  padding: 30px 60px;
+  padding: 30px 0;
 }
 
 .team-title {
@@ -322,10 +320,6 @@ li {
   color: var(--accent-color);
 }
 
-.portfolio {
-  background-color: var(--general-color-bcg);
-}
-
 .portfolio-list-button {
   display: flex;
   justify-content: center;
@@ -339,11 +333,14 @@ li {
 .portfolio-button:hover {
   color: var(--accent-color-portfolio-button);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .portfolio-button {
   cursor: pointer;
   color: var(--secondary-title-color);
-  background-color: var(--white-color);
+
+  background: var(--secondaru-color-bcg);
 
   font-weight: 500;
   font-size: 16px;
@@ -351,8 +348,6 @@ li {
   letter-spacing: 0.03em;
 
   padding: 6px 22px;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   border: transparent;
 }
@@ -368,7 +363,7 @@ li {
   margin-left: 30px;
   margin-top: 30px;
   flex-basis: calc(100% / 3 - 30px);
-  border: 1px solid #eeeeee;
+
   background: #ffffff;
 }
 
@@ -388,6 +383,7 @@ li {
 
 .card-text-portfolio {
   padding: 20px 24px;
+  border: 1px solid #eeeeee;
 }
 
 .portfolio-item > img {
